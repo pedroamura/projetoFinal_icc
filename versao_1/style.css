@@ -1,0 +1,183 @@
+/* ---TAGS--- */
+
+body {
+    background-color: #2C2C2C;
+}
+
+table {
+	table-layout: fixed;
+	height: 350px;
+	width: 350px;
+}
+
+/* ---ID'S--- */
+
+#div_jogo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #252B48;
+    padding: 20px;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#logo {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    height: 126px;
+    width: 224px;
+}
+
+#texto {
+    position: relative;
+    top: 10px;
+
+    width: 255px;
+
+    font-family: monospace;
+}
+
+#envio {
+    position: relative;
+    top: 10px;
+
+    width: 80px;
+
+    font-family: monospace;
+}
+
+#vitoria {
+    display: none;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 420px;
+	width: 420px;
+    padding: 15px;
+    justify-content: center;
+
+    background-color: #252B48;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+#vitoria img {
+    width: 400px;
+    height: 265px;
+
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#vitoria p {
+    position: absolute;
+    top: 65%;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+#derrota {
+    display: none;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 420px;
+	width: 420px;
+    padding: 15px;
+    justify-content: center;
+
+    background-color: #252B48;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#derrota img {
+    width: 400px;
+    height: 265px;
+
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#derrota p {
+    position: absolute;
+    top: 65%;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+#tutorial {
+    display: "flex";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 420px;
+	width: 420px;
+    padding: 15px;
+    justify-content: center;
+
+    background-color: #252B48;
+    border-radius: 15px;
+    border-color: aliceblue;
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+#tutorial p {
+    font-size: 15px;
+    font-family: monospace;
+    color: white;
+}
+
+/* ---CLASSES--- */
+
+.td_jogo {
+	height: 30px;
+	width: 30px;
+    text-align: center;
+	border-style: solid;
+    background-color: #455086;
+	border-width: 2px;
+	border-radius: 6px;
+	overflow: hidden;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+#vitoria .jogar, #derrota .jogar {
+    position: absolute;
+    top: 400px;
+
+    width: 90px;
+    height: 40px;
+
+    font-family: monospace;
+}
