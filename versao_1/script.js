@@ -136,3 +136,13 @@ function limpaTabela() {
         }
     }
 }
+
+//funções do teclado
+function moverValor (botao) {
+	let valorBotao = botao.value;
+	document.getElementById("texto").value += valorBotao;
+}
+
+function apagar() {
+	document.getElementById("texto").value = document.getElementById("texto").value.slice(0,-1);
+}
