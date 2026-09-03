@@ -181,3 +181,54 @@ table {
 
     font-family: monospace;
 }
+/*---TECLADO---*/
+
+
+
+#tabelateclado {
+	height: 150px;
+	width: 600px;
+	table-layout: fixed;
+	position:absolute;
+	top: 75%;
+	left:27%;
+}
+
+.teclas{
+	height: 30px;
+	widht: 40px;
+	text-allign: center;
+	border-style: solid;
+	border-color:#455086;
+	border-width:2px;
+	border-radius: 6px;
+	font-family: monospace;
+	font-size:25px;
+	background-color: #455086;
+	text-align: center;
+}
+#segundalinha{
+	position:relative;
+	left:5%;
+}
+#terceiralinha{
+	position:relative;
+	left:10%;
+}
+#enter{
+	position:relative;
+	left: 2%;
+}
+td button{
+	height: 30px;
+	widht: 40px;
+	text-allign: center;
+	border-style: solid;
+	border-color:#455086;
+	border-width:2px;
+	border-radius: 6px;
+	font-family: monospace;
+	font-size:25px;
+	background-color: #455086;
+	text-align: center;	
+}
