@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" />
+		<title>TERMO 2</title>
+	</head>
+	<body>
+        <img id="logo" src="termo_logo.png">
+        <div id="div_jogo">
+            <table id="tabela">
+                <tr> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> </tr>
+                <tr> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> </tr>
+                <tr> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> </tr>
+                <tr> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> </tr>
+                <tr> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> <td class="td_jogo"></td> </tr>
+            </table>
+
+            <input id="texto" type="text" pattern="^[a-zA-Z]{4}$" placeholder="Digite uma palavra de 4 letras">
+            <button id="envio" onclick=envio();>ENVIAR</button>
+
+            </div>
+        <div id="vitoria">
+            <img src="vitoria.webp">
+            <p id="texto_vitoria"></p>
+            <button class="jogar" onclick=jogo();>JOGAR NOVAMENTE</button>
+        </div>
+        <div id="derrota">
+            <img src="derrota.webp">
+            <p id="texto_derrota"></p>
+            <button class="jogar" onclick=jogo();>JOGAR NOVAMENTE</button>
+        </div>
+        <div id="tutorial">
+            <p>TUTORIAL DO JOGO</p>
+			<p>Tente adivinhar a palavra oculta! Cada tentativa vai te dar dicas
+			sobre a resposta certa. Quando você envia uma palavra, ela aparece no meio com cores diferentes
+			que representam estados possíveis da letra.
+			</p>
+			<ul>
+				<li><p style="color: #5B9A8B;">VERDE: A letra está na palavra e na posição correta</p></li>
+				<li><p style="color: #F7E987;">AMARELA: A letra está na palavra, mas em uma posição diferente</p></li>
+				<li><p style="color: #445069;">CINZA: A letra não está na palavra</p></li>
+			</ul>
+            <button class="jogar" onclick=jogo();>JOGAR</button>
+        </div>
+		<div id="Teclado">
+			<table id="tabelateclado">
+				<tr id="primeiralinha">
+					<td class="teclas"><button value="Q" onclick=moverValor(this)>Q</button></td>
+					<td class="teclas"><button value="W" onclick=moverValor(this)>W</button></td>
+					<td class="teclas"><button value="E" onclick=moverValor(this)>E</Em></Em></button></td>
+					<td class="teclas"><button value="R" onclick=moverValor(this)>R</button></td>
+					<td class="teclas"><button value="T" onclick=moverValor(this)>T</button></td>
+					<td class="teclas"><button value="Y" onclick=moverValor(this)>Y</button></td>
+					<td class="teclas"><button value="U" onclick=moverValor(this)>U</button></td>
+					<td class="teclas"><button value="I" onclick=moverValor(this)>I</button></td>
+					<td class="teclas"><button value="O" onclick=moverValor(this)>O</button></td>
+					<td class="teclas"><button value="P" onclick=moverValor(this)>P</button></td>
+				</tr>
+				<tr id="segundalinha">
+					<td class="teclas"><button value="A" onclick=moverValor(this)>A</button></td>
+					<td class="teclas"><button value="S" onclick=moverValor(this)>S</button></td>
+					<td class="teclas"><button value="D" onclick=moverValor(this)>D</button></td>
+					<td class="teclas"><button value="F" onclick=moverValor(this)>F</button></td>
+					<td class="teclas"><button value="G" onclick=moverValor(this)>G</button></td>
+					<td class="teclas"><button value="H" onclick=moverValor(this)>H</button></td>
+					<td class="teclas"><button value="J" onclick=moverValor(this)>J</button></td>
+					<td class="teclas"><button value="K" onclick=moverValor(this)>K</button></td>
+					<td class="teclas"><button value="L" onclick=moverValor(this)>L</button></td>
+					<td class="teclas"><button onclick=apagar()> << </button></td>
+				</tr>
+				<tr id="terceiralinha">
+					<td class="teclas"><button value="Z" onclick=moverValor(this)>Z</button></td>
+					<td class="teclas"><button value="X" onclick=moverValor(this)>X</button></td>
+					<td class="teclas"><button value="C" onclick=moverValor(this)>C</button></td>
+					<td class="teclas"><button value="V" onclick=moverValor(this)>V</button></td>
+					<td class="teclas"><button value="B" onclick=moverValor(this)>B</button></td>
+					<td class="teclas"><button value="N" onclick=moverValor(this)>N</button></td>
+					<td class="teclas"><button value="M" onclick=moverValor(this)>M</button></td>
+					<td class="teclas" colspan="2" id="enter"><button onclick = envio()>ENTER</button></td>
+					
+				</tr>					
+			</table>
+		</div>
+            <script src="script.js"></script>
+	</body>
+</html>
